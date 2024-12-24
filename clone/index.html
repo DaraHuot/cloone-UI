@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .logo {
+      width: 60px;
+      height: 60px;
+    }
+    
+  </style>
+</head>
+
+<body class="bg-gray-100">
+  <!-- Header -->
+  <header class="relative bg-white shadow">
+    <p class="flex h-10 items-center justify-center bg-yellow-400 px-4 text-sm font-medium text-black">
+      <span class="bg-white px-2 py-1 rounded-full">ព័ត៍មាន</span> វគ្គសិក្សាថ្មី៖ Java Programing
+    </p>
+
+    <div class="max-w-screen-xl mx-auto flex h-16 items-center px-4 sm:px-6 lg:px-8">
+      <div class="logo">
+        <img src="./logo.jpg" alt="Logo" class="w-full h-full object-contain">
+      </div>
+      <nav class="hidden md:flex flex-1 justify-center items-center space-x-6 text-sm">
+        <a href="#" class="text-gray-600 hover:text-gray-800">វគ្គសិក្សា</a>
+        <a href="#" class="text-gray-600 hover:text-gray-800">ប្លុក</a>
+        <a href="#" class="text-gray-600 hover:text-gray-800">វេទិការ</a>
+        <a href="#" class="text-gray-600 hover:text-gray-800">អំពីពួកយើង</a>
+        <a href="#" class="text-gray-600 hover:text-gray-800">ទាញយកកម្មវិធី</a>
+        <a href="#" class="text-gray-600 hover:text-gray-800">ចំណាត់ថ្នាក់</a>
+      </nav>
+      <div class="flex items-center space-x-4">
+        <a href="#" class="px-4 py-2 border border-yellow-400 rounded-md text-black bg-white hover:bg-yellow-400">ចូលប្រើ</a>
+        <a href="#" class="hidden md:block px-4 py-2 bg-yellow-300 rounded-md text-black">បង្កើតគណនី</a>
+        <button class="md:hidden p-2 text-gray-600 hover:text-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+    <!-- Hero Section -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h2 class="text-yellow-400 text-4xl font-bold mb-4">Developer Cambodia</h2>
+        <p class="text-gray-700 mb-6">
+          គឺជាគេហទំព័រដែលផ្តល់វគ្គបណ្តុះបណ្តាល និងការបង្រៀនតាមអ៊ីនធឺណិត<br>
+          លើប្រធានបទជាច្រើន រួមទាំងអាជីវកម្ម បច្ចេកវិទ្យា ការរចនា ។ល។<br>
+          ពិសេសជាងនេះទៅទៀតយើងក៏មានផ្តល់ជូននូវវិញ្ញាបនបត្រដល់សិស្សនិសិត្ស <br>
+          បន្ទាប់ពីបញ្ចប់វគ្គសិក្សាណានីមួយៗ។<br>
+        </p>
+        <div class="space-y-4">
+          <a href="#" class="inline-flex items-center gap-2 px-6 py-3 border border-yellow-400 bg-yellow-400 text-black rounded-md hover:bg-transparent hover:text-yellow-600">
+            ក្លាយជាគ្រូបង្រៀន
+            <svg class="size-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+          <a href="#" class="inline-flex items-center gap-2 px-6 py-3 border border-yellow-400 rounded-md text-black hover:bg-yellow-400 hover:text-black">
+            ក្លាយជាអ្នកសរសេរអត្ថបទ
+            <svg class="size-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="text-center">
+        <img src="img/tablet.png" alt="Tablet" class="max-w-full mx-auto object-cover">
+      </div> 
+    </section>
+
+    <!-- Blog Section -->
+    <section class="py-12 bg-gray-100">
+      <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- <h2 class="text-2xl font-bold text-center mb-8 text-gray-800">Our Courses</h2> -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+          <!-- Card 1 -->
+          <div class="bg-purple-100 p-6 rounded-lg text-center">
+            <img src="img/cloud.png" alt="Cloud Computing" class="w-20 h-20 mx-auto mb-4 rounded-full">
+            <h3 class="text-lg font-semibold text-gray-800">Cloud Computing</h3>
+            <p class="text-gray-600">15 វគ្គសិក្សា​​</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="bg-pink-100 p-6 rounded-lg text-center">
+            <img src="img/block.png" alt="Block Chain" class="w-20 h-20 mx-auto mb-4">
+            <h3 class="text-lg font-semibold text-gray-800">Block Chain</h3>
+            <p class="text-gray-600">23 វគ្គសិក្សា</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="bg-green-100 p-6 rounded-lg text-center">
+            <img src="img/bigdata.png" alt="Big Data" class="w-20 h-20 mx-auto mb-4">
+            <h3 class="text-lg font-semibold text-gray-800">Big Data</h3>
+            <p class="text-gray-600">27 វគ្គសិក្សា</p>
+          </div>
+          <!-- Card 4 -->
+          <div class="bg-green-100 p-6 rounded-lg text-center">
+            <img src="img/cyber.png" alt="Cyber Security" class="w-20 h-20 mx-auto mb-4">
+            <h3 class="text-lg font-semibold text-gray-800">Cyber Security</h3>
+            <p class="text-gray-600">15 វគ្គសិក្សា</p>
+          </div>
+          <!-- Card 1 -->
+          <div class="bg-purple-100 p-6 rounded-lg text-center">
+            <img src="img/cloud.png" alt="Cloud Computing" class="w-20 h-20 mx-auto mb-4 rounded-full">
+            <h3 class="text-lg font-semibold text-gray-800">Cloud Computing</h3>
+            <p class="text-gray-600">15 វគ្គសិក្សា</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="bg-pink-100 p-6 rounded-lg text-center">
+            <img src="img/block.png" alt="Block Chain" class="w-20 h-20 mx-auto mb-4">
+            <h3 class="text-lg font-semibold text-gray-800">Block Chain</h3>
+            <p class="text-gray-600">23 វគ្គសិក្សា</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="bg-green-100 p-6 rounded-lg text-center">
+            <img src="img/bigdata.png" alt="Big Data" class="w-20 h-20 mx-auto mb-4">
+            <h3 class="text-lg font-semibold text-gray-800">Big Data</h3>
+            <p class="text-gray-600">27 វគ្គសិក្សា</p>
+          </div>
+          <!-- Card 4 -->
+          <div class="bg-green-100 p-6 rounded-lg text-center">
+            <img src="img/cyber.png" alt="Cyber Security" class="w-20 h-20 mx-auto mb-4">
+            <h3 class="text-lg font-semibold text-gray-800">Cyber Security</h3>
+            <p class="text-gray-600">15 វគ្គសិក្សា</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Courses section -->
+    <section class="py-8 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-blue-800 mb-6">
+          វគ្គសក្សាដោយឥតគិតថ្លៃ
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <!-- Card 1 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="img/teacher.png" alt="Spring Boot" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg mb-2">
+                ក្លាយជា Back-End Developer 
+                Spring Framework
+              </h3>
+              <p class="text-sm text-gray-600 mb-4">Chan Chhaya</p>
+              <p class="text-sm text-yellow-500 mb-4">9 ★ (100 reviews)</p>
+              <a href="#" class="block bg-yellow-400 text-center py-2 rounded-md text-white font-bold hover:bg-yellow-500">
+                ឥតគិតថ្លៃ
+              </a>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="img/teacher.png" alt="GitHub" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg mb-2">
+                វគ្គសិក្សា Github & Gitlab
+                Basic to Advanced
+              </h3>
+              <p class="text-sm text-gray-600 mb-4">Kit Tara</p>
+              <p class="text-sm text-yellow-500 mb-4">6 ★ (20 reviews)</p>
+              <a href="#" class="block bg-yellow-400 text-center py-2 rounded-md text-white font-bold hover:bg-yellow-500">
+                ឥតគិតថ្លៃ
+              </a>
+            </div>
+          </div>
+          <!--card 3 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="img/teacher.png" alt="GitHub" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg mb-2">
+                វគ្គសិក្សា Github & Gitlab
+                Basic to Advanced
+              </h3>
+              <p class="text-sm text-gray-600 mb-4">Kit Tara</p>
+              <p class="text-sm text-yellow-500 mb-4">6 ★ (20 reviews)</p>
+              <a href="#" class="block bg-yellow-400 text-center py-2 rounded-md text-white font-bold hover:bg-yellow-500">
+                ឥតគិតថ្លៃ
+              </a>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="img/teacher.png" alt="GitHub" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg mb-2">
+                វគ្គសិក្សា Github & Gitlab
+                Basic to Advanced
+              </h3>
+              <p class="text-sm text-gray-600 mb-4">Kit Tara</p>
+              <p class="text-sm text-yellow-500 mb-4">6 ★ (20 reviews)</p>
+              <a href="#" class="block bg-yellow-400 text-center py-2 rounded-md text-white font-bold hover:bg-yellow-500">
+                ឥតគិតថ្លៃ
+              </a>
+            </div>
+          </div>
+          <!-- card 5 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="img/teacher.png" alt="GitHub" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg mb-2">
+                វគ្គសិក្សា Github & Gitlab
+                Basic to Advanced
+              </h3>
+              <p class="text-sm text-gray-600 mb-4">Kit Tara</p>
+              <p class="text-sm text-yellow-500 mb-4">6 ★ (20 reviews)</p>
+              <a href="#" class="block bg-yellow-400 text-center py-2 rounded-md text-white font-bold hover:bg-yellow-500">
+                ឥតគិតថ្លៃ
+              </a>
+            </div>
+          </div>
+          <!-- card 6 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="img/teacher.png" alt="GitHub" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg mb-2">
+                វគ្គសិក្សា Github & Gitlab
+                Basic to Advanced
+              </h3>
+              <p class="text-sm text-gray-600 mb-4">Kit Tara</p>
+              <p class="text-sm text-yellow-500 mb-4">6 ★ (20 reviews)</p>
+              <a href="#" class="block bg-yellow-400 text-center py-2 rounded-md text-white font-bold hover:bg-yellow-500">
+                ឥតគិតថ្លៃ
+              </a>
+            </div>
+          </div>
+          <!-- card 7 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="img/teacher.png" alt="GitHub" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg mb-2">
+                វគ្គសិក្សា Github & Gitlab
+                Basic to Advanced
+              </h3>
+              <p class="text-sm text-gray-600 mb-4">Kit Tara</p>
+              <p class="text-sm text-yellow-500 mb-4">6 ★ (20 reviews)</p>
+              <a href="#" class="block bg-yellow-400 text-center py-2 rounded-md text-white font-bold hover:bg-yellow-500">
+                ឥតគិតថ្លៃ
+              </a>
+            </div>
+          </div>
+          <!-- card 8 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="img/teacher.png" alt="GitHub" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg mb-2">
+                វគ្គសិក្សា Github & Gitlab
+                Basic to Advanced
+              </h3>
+              <p class="text-sm text-gray-600 mb-4">Kit Tara</p>
+              <p class="text-sm text-yellow-500 mb-4">6 ★ (20 reviews)</p>
+              <a href="#" class="block bg-yellow-400 text-center py-2 rounded-md text-white font-bold hover:bg-yellow-500">
+                ឥតគិតថ្លៃ
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+  </main>
+</body>
+
+</html>
